@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1976D2</color><!--#00CFC9-->
+    <color name="colorPrimaryDark">#0a5aa9</color>
+    <color name="colorAccent">#c5c1c6</color>
+
+    <color name="color1">#6c848f</color><!--#00CFC9-->
+    <color name="color2">#437993</color>
+    <color name="color3">#4a4436</color>
+    <color name="color01">#9f8dc1</color><!--#00CFC9-->
+    <color name="color02">#1976D2</color>
+
+    <color name="photo_progress_color">#ffe157</color>
+    <color name="bg_color_12">#7cc77f</color>
+
+    <color name="main">#1976D2</color>
+    <color name="icon_color">#9f9d91</color>
+    <color name="main_light">#1976D2</color>
+    <color name="main_yellow">#1976D2</color>
+    <color name="dialog_waiting_bg">#99000000</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="topbar_bg">#262B27</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="blue">#00f</color>
+    <color name="orange">#f66325</color>
+    <color name="red">#ff0000</color>
+    <color name="optionSelect">#D9D9D9</color>
+    <color name="stateColor">#556c6c6c</color>
+    <color name="bg_white">#f8f8f8</color>
+
+
+    <color name="god_tag_sel">#de6060</color>
+
+    <color name="top_bar_bg_color">#1976D2</color>
+    <color name="top_bar_text_color">#ffffff</color>
+
+    <color name="line">#dbdbdb</color>
+    <color name="bar">#e6e6e6</color>
+    <color name="content_bg">#f2f2f2</color>
+
+
+    <color name= "tab_nor_color">#a1a1a1</color>
+    <color name= "tab_sel_color">#004a93</color>
+    <color name= "tag_sel_color">#e8e8e8</color>
+
+    <color name="text0">#464646</color>
+    <color name="text1">#676666</color>
+    <color name="text2">#c8969696</color>
+    <color name="text3">#969696</color>
+    <color name="text4">#DDDDDD</color>
+    <color name="text5">#EFEFEF</color>
+    <color name="text6">#2f2f2f</color>
+
+
+
+
+    <color name="divider">#999</color>
+
+
+
+
+</resources>

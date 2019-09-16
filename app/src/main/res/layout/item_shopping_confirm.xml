@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/default_img"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/iv_image"
+            android:layout_alignTop="@id/iv_image"
+            android:maxLines="1"
+            android:layout_marginLeft="18dp"
+            android:text="iPhone 7，现更以红现更以红色呈现。"
+            android:maxWidth="130dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:text="￥12"
+            android:layout_alignLeft="@id/tv_title"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="20dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text1"
+            android:textSize="13sp"
+            android:text="x1"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_price"
+            />
+
+    </RelativeLayout>
+    <View style="@style/lineStyle"/>
+
+</LinearLayout>

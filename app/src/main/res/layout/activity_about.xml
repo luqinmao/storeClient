@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height">
+
+
+        <com.lqm.study.widget.IconTextView
+            android:id="@+id/it_return"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:text="@string/ic_return"
+            android:gravity="center"
+            android:textSize="@dimen/top_icon_size"
+            android:textColor="@color/text1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于我们"
+            android:textColor="@color/text0"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            />
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+
+    <com.lqm.study.widget.RoundImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="50dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/logo"
+        app:type="circle" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/about_me_tip"
+        android:textSize="@dimen/text_medium_size" />
+
+
+
+
+</LinearLayout>
+
+
+
+

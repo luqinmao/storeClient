@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:qinc="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/topbar_height">
+
+
+            <com.lqm.study.widget.IconTextView
+                android:id="@+id/it_return"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:text="@string/ic_return"
+                android:gravity="center"
+                android:textSize="@dimen/top_icon_size"
+                android:textColor="@color/text1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品详情"
+                android:textColor="@color/text0"
+                android:textSize="16sp"
+                android:layout_centerInParent="true"
+                />
+
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line"
+                android:layout_alignParentBottom="true"
+                />
+
+        </RelativeLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="50dp"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@mipmap/default_img"
+                    android:maxHeight="52dp"
+                    android:scaleType="fitXY"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_marginTop="15dp"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥200"
+                        android:textSize="18sp"
+                        android:textColor="@color/red"
+                        android:layout_centerVertical="true"
+                        />
+
+
+                    <com.lqm.study.widget.NumberButton
+                        android:id="@+id/btn_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        qinc:editable="false"
+                        qinc:textSize="8sp"
+                        android:layout_centerVertical="true"
+                        />
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="title"
+                    android:textColor="@color/text0"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="desc"
+                    android:textColor="@color/text1"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@color/bg_white">
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计：￥0"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_to_car"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="加入购物车"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape_bg_round_blue_left"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_to_buy"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="立即购买"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape_bg_round_orange_right"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

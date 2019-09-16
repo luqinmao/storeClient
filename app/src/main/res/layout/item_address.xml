@@ -1,0 +1,62 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <com.lqm.study.widget.IconTextView
+        android:id="@+id/ic_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ic_address"
+        android:textSize="22dp"
+        android:textColor="@color/blue"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_shipping_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="收货人:豆腐"
+        android:layout_toRightOf="@id/ic_address"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="23dp"
+        android:textColor="@color/text0"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_shipping_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电话:12345678910"
+        android:layout_toRightOf="@id/tv_shipping_name"
+        android:layout_alignTop="@id/tv_shipping_name"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/text0"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_shipping_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="地址:广东省深圳市龙岗区龙城街道xxxxxxxx"
+        android:layout_alignLeft="@id/tv_shipping_name"
+        android:layout_below="@id/tv_shipping_name"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/text0"
+        android:textSize="15sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:qinc="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        >
+
+        <com.lqm.study.widget.IconTextView
+            android:id="@+id/it_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ic_un_select"
+            android:textColor="@color/text1"
+            android:textSize="24sp"
+            android:padding="4dp"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/it_select"
+            android:background="@drawable/shape_round_rect_line_gray"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <com.lqm.study.widget.RoundImageView
+                android:id="@+id/iv_image"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@mipmap/default_img"
+                app:type="circle"
+                android:layout_centerVertical="true"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_toRightOf="@id/iv_image"
+                android:layout_alignTop="@id/iv_image"
+                android:maxLines="1"
+                android:layout_marginLeft="10dp"
+                android:text="iPhone 7，现更以红现更以红色呈现。"
+                android:maxWidth="130dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="12sp"
+                android:text="￥12"
+                android:layout_alignLeft="@id/tv_title"
+                android:layout_below="@id/tv_title"
+                android:layout_marginTop="12dp"
+                />
+
+
+            <com.lqm.study.widget.NumberButton
+                android:id="@+id/btn_number"
+                android:layout_width="80dp"
+                android:layout_height="26dp"
+                qinc:editable="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/tv_price"
+                />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

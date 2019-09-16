@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">豆腐小店</string>
+
+    <!--iconfont字体图标-->
+    <string name="ic_return">&#xe9c9;</string> <!--返回-->
+    <string name="ic_forward">&#xe665;</string> <!--前进-->
+    <string name="ic_more">&#xe640;</string> <!--更多-->
+    <string name="ic_shipping">&#xe65b;</string> <!--小車-->
+    <string name="ic_address">&#xe62e;</string> <!--地址-->
+    <string name="ic_search">&#xe632;</string> <!--搜索-->
+    <string name="ic_add">&#xe678;</string> <!--加-->
+
+    <string name="ic_select">&#xe657;</string> <!--选中-->
+    <string name="ic_un_select">&#xe662;</string> <!--未选中-->
+    <string name="ic_close">&#xe695;</string> <!--×叉-->
+
+
+    <string name="ic_goods_un_pay">&#xe65b;</string> <!--待付款-->
+
+
+
+    <string name="ic_tab_1_home">&#xe6a5;</string>
+    <string name="ic_tab_2_sorf">&#xe6c5;</string>
+    <string name="ic_tab_3_cart">&#xe605;</string>
+    <string name="ic_tab_4_my">&#xe60d;</string>
+
+
+
+
+    <string name="about_me_tip">
+        项目后端项目地址： https://github.com/luqinmao/store. \n\n
+        本项目源码地址为 https://github.com/luqinmao/LittleStore. \n\n 哈哈，如果觉得可以的话给个start吧！\n\n
+        项目主要技术框架技术： \n\n xxxxxxxxxxxxxx
+    </string>
+
+
+</resources>

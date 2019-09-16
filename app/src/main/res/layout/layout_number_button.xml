@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_number_button_center"
+    android:divider="@drawable/number_divider_horizontal"
+    android:orientation="horizontal"
+    android:weightSum="3.5"
+    android:showDividers="middle">
+
+    <TextView
+        android:id="@+id/button_sub"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg_number_button_left"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="#000"
+        android:minWidth="30dp"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/text_count"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:background="@null"
+        android:cursorVisible="true"
+        android:digits="0123456789"
+        android:gravity="center"
+        android:singleLine="true"
+        android:inputType="number"
+        android:minWidth="45dp"
+        android:text="1"
+        android:enabled="false"
+        android:textColor="#000"
+        android:textCursorDrawable="@null"/>
+
+    <TextView
+        android:id="@+id/button_add"
+        android:layout_width="0dp"
+        android:minWidth="30dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg_number_button_right"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="#000"
+        android:textSize="18sp"/>
+</LinearLayout>
