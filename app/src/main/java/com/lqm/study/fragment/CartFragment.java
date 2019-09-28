@@ -73,7 +73,8 @@ public class CartFragment extends BaseFragment {
 
         rvContent.setLayoutManager(new LinearLayoutManager(getContext()));
         carAdapter = new CarAdapter(null);
-        rvContent.setAdapter(carAdapter);
+        carAdapter.bindToRecyclerView(rvContent);
+        carAdapter.setEmptyView(R.layout.layout_empty_nor);
 
         getShoppingCarData();
 
@@ -112,7 +113,7 @@ public class CartFragment extends BaseFragment {
 
                         @Override
                         public void onError(Response<ResponseData<ShoppingCardVo>> response) {
-                            T.showShort("出现错误了，请稍后再试");
+                            T.showShort(response.getException().getMessage());
                         }
                     });
             }

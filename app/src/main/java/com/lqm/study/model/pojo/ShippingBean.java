@@ -31,6 +31,7 @@ public class ShippingBean implements Serializable{
         private String receiverZip;
         private String createTime;
         private String updateTime;
+        private boolean isDefault;
 
         public int getId() {
             return id;
@@ -126,5 +127,13 @@ public class ShippingBean implements Serializable{
 
         public void setUpdateTime(String updateTime) {
             this.updateTime = updateTime;
+        }
+
+        public boolean isDefault() {
+            return isDefault;
+        }
+
+        public void setDefault(boolean aDefault) {
+            isDefault = aDefault;
         }
 }

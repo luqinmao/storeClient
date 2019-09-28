@@ -8,8 +8,8 @@ package com.lqm.study.common;
 public class AppConst {
 
 //    public static final String SERVER_ADDRESS = "http://127.0.0.1:8080/";
-//    public static final String SERVER_ADDRESS = "http://10.0.2.2:8080"; //模拟器访问本地服务器地址
-	public static final String SERVER_ADDRESS = "http://192.168.0.142:8080"; //手机访问本地服务器地址
+    public static final String SERVER_ADDRESS = "http://10.0.2.2:8080"; //模拟器访问本地服务器地址
+//	public static final String SERVER_ADDRESS = "http://192.168.0.142:8080"; //手机访问本地服务器地址
 //    public static final String SERVER_ADDRESS = "http://外网IP:8080/"; //外网
 
 

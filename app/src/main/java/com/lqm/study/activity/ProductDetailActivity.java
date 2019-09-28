@@ -135,11 +135,11 @@ public class ProductDetailActivity extends BaseActivity {
 
     private void setUIData(final ProductBean data) {
         mProductData = data;
-        tvTitle.setText(data.getSubtitle());
-        tvDesc.setText(Html.fromHtml(data.getName()));
+        tvTitle.setText(data.getName());
+        tvDesc.setText(data.getDetail());
         tvPrice.setText("￥"+data.getPrice());
         tvTotalPrice.setText("合计：￥"+data.getPrice());
-        ImageLoaderManager.loadImage(ProductDetailActivity.this,AppConst.IMAGE_HOST+data.getMainImage(),ivImage);
+        ImageLoaderManager.loadImage(ProductDetailActivity.this,data.getMainImage(),ivImage);
 
         btnNumber.setBuyMax(data.getStock())
                 .setInventory(data.getStock())

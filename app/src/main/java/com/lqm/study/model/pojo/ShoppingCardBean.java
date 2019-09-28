@@ -25,9 +25,9 @@ public class ShoppingCardBean {
         private String productName;
         private String productSubtitle;
         private String productMainImage;
-        private int productPrice;
+        private double productPrice;
         private int productStatus;
-        private int productTotalPrice;
+        private double productTotalPrice;
         private int productStock;
         /**
          * 是否选择,1=已勾选,0=未勾选
@@ -91,11 +91,11 @@ public class ShoppingCardBean {
             this.productMainImage = productMainImage;
         }
 
-        public int getProductPrice() {
+        public double getProductPrice() {
             return productPrice;
         }
 
-        public void setProductPrice(int productPrice) {
+        public void setProductPrice(double productPrice) {
             this.productPrice = productPrice;
         }
 
@@ -107,11 +107,11 @@ public class ShoppingCardBean {
             this.productStatus = productStatus;
         }
 
-        public int getProductTotalPrice() {
+        public double getProductTotalPrice() {
             return productTotalPrice;
         }
 
-        public void setProductTotalPrice(int productTotalPrice) {
+        public void setProductTotalPrice(double productTotalPrice) {
             this.productTotalPrice = productTotalPrice;
         }
 

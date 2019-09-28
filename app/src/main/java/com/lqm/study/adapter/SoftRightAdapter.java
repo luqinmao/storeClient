@@ -30,7 +30,7 @@ public class SoftRightAdapter extends BaseQuickAdapter<ProductBean,BaseViewHolde
     @Override
     protected void convert(BaseViewHolder helper, final ProductBean item) {
 
-        helper.setText(R.id.tv_title,item.getSubtitle());
+        helper.setText(R.id.tv_title,item.getName());
         helper.setText(R.id.tv_price,"￥："+item.getPrice());
 
         TextView tvStock =  helper.getView(R.id.tv_stock);
@@ -42,7 +42,7 @@ public class SoftRightAdapter extends BaseQuickAdapter<ProductBean,BaseViewHolde
         }
 
         ImageView imageView = helper.getView(R.id.iv_image);
-        ImageLoaderManager.loadImage(mContext, AppConst.IMAGE_HOST+item.getMainImage(),imageView);
+        ImageLoaderManager.loadImage(mContext, item.getMainImage(),imageView);
 
 
         helper.itemView.setOnClickListener(new View.OnClickListener() {

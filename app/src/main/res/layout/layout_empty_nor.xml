@@ -4,16 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     >
 
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_emply_data"
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/text0"
+        android:textColor="@color/text6"
         android:text="~~没有任何数据~~"
         android:textSize="16sp"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="50dp"
         />
 
 </LinearLayout>

@@ -133,6 +133,12 @@ public class UserFragment extends BaseFragment {
                         public void onError(Response<ResponseData<String>> response) {
                             T.showShort(getContext(), response.getException().toString());
                         }
+
+                        @Override
+                        public void onFinish() {
+                            startActivity(new Intent(getContext(),LoginRegisterActivity.class));
+                            getActivity().finish();
+                        }
                     });
                 break;
 

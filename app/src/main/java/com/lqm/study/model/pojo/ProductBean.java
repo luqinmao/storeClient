@@ -24,7 +24,7 @@ public class ProductBean implements Serializable{
         private String name;
         private String subtitle;
         private String mainImage;
-        private int price;
+        private double price;
         private int stock;
         private int status;
         private String createTime;
@@ -72,11 +72,11 @@ public class ProductBean implements Serializable{
             this.mainImage = mainImage;
         }
 
-        public int getPrice() {
+        public double getPrice() {
             return price;
         }
 
-        public void setPrice(int price) {
+        public void setPrice(double price) {
             this.price = price;
         }
 

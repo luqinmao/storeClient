@@ -147,8 +147,8 @@ public class OrderConfirmActivity extends BaseActivity {
             getServerData();
         }
 
-        //地址
-//        getAddressData();
+        //收货地址信息
+        getAddressData();
 
     }
 
@@ -162,7 +162,17 @@ public class OrderConfirmActivity extends BaseActivity {
                             && model.getData().getList() != null
                             && model.getData().getList().size()>0
                             ){
-                        shippingData = model.getData().getList().get(0);
+                        rlAddress.setVisibility(View.VISIBLE);
+                        rlAddAddress.setVisibility(View.GONE);
+                        for (ShippingBean bean: model.getData().getList()) {
+                            if (bean.isDefault()){
+                                shippingData = bean;
+                            }
+                        }
+
+                    }else {
+                        rlAddress.setVisibility(View.GONE);
+                        rlAddAddress.setVisibility(View.VISIBLE);
                     }
                 }
 

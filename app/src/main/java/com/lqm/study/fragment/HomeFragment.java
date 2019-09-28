@@ -82,9 +82,10 @@ public class HomeFragment extends BaseFragment
     private void initBannerData() {
 
         List<String> images = new ArrayList<>();
-        images.add("http://img0.imgtn.bdimg.com/it/u=1391112235,2109989447&fm=26&gp=0.jpg");
-        images.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558414547968&di=5a17d5d0cc40a6ec13de127d5eb6c01d&imgtype=0&src=http%3A%2F%2Fimg1.cache.netease.com%2Fcatchpic%2F0%2F02%2F024C2DD6DEBC1A57418B930C60875D0A.jpg");
-        images.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558414546232&di=4a3fb15ec056e94f4969448ba22c03aa&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Ffb63c8cc57bf977754b2c891badf0676358fc53e74af-BnyBi9_fw658");
+        images.add("https://lqmdemo.oss-cn-beijing.aliyuncs.com/store/ad1.png");
+        images.add("https://lqmdemo.oss-cn-beijing.aliyuncs.com/store/ad2.png");
+        images.add("https://lqmdemo.oss-cn-beijing.aliyuncs.com/store/ad3.png");
+        images.add("https://lqmdemo.oss-cn-beijing.aliyuncs.com/store/ad4.png");
         banner.setData(R.layout.item_home_banner, images, null);
         banner.setAdapter(new BGABanner.Adapter<View, String>() {
             @Override
