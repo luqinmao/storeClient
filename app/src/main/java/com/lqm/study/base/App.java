@@ -1,4 +1,4 @@
-package com.lqm.study.common;
+package com.lqm.study.base;
 
 import android.app.Activity;
 import android.app.Application;
@@ -14,20 +14,13 @@ import com.lzy.imagepicker.view.CropImageView;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.cache.CacheEntity;
 import com.lzy.okgo.cache.CacheMode;
-import com.lzy.okgo.cookie.CookieJarImpl;
-import com.lzy.okgo.cookie.store.CookieStore;
-import com.lzy.okgo.cookie.store.SPCookieStore;
-import com.lzy.okgo.https.HttpsUtils;
 import com.lzy.okgo.interceptor.HttpLoggingInterceptor;
 import com.lzy.okgo.model.HttpHeaders;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
-import okhttp3.Cookie;
-import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
 
 /**

@@ -1,27 +1,21 @@
 package com.lqm.study.fragment;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.lqm.study.R;
 import com.lqm.study.activity.AboutActivity;
 import com.lqm.study.activity.AddressListActivity;
 import com.lqm.study.activity.LoginRegisterActivity;
 import com.lqm.study.activity.MoreActivity;
 import com.lqm.study.activity.OrderListActivity;
-import com.lqm.study.common.App;
-import com.lqm.study.common.AppConst;
-import com.lqm.study.common.BaseFragment;
+import com.lqm.study.base.App;
+import com.lqm.study.base.AppConst;
+import com.lqm.study.base.BaseFragment;
 import com.lqm.study.helper.JsonCallback;
 import com.lqm.study.helper.ResponseData;
 import com.lqm.study.model.User;

@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.util.Log;
 
 import com.lqm.study.activity.LoginRegisterActivity;
-import com.lqm.study.common.App;
+import com.lqm.study.base.App;
 
 import org.json.JSONException;
 import org.json.JSONObject;

@@ -15,8 +15,8 @@ import com.alipay.sdk.app.EnvUtils;
 import com.alipay.sdk.app.PayTask;
 import com.lqm.study.R;
 import com.lqm.study.adapter.OrderListItemAdapter;
-import com.lqm.study.common.AppConst;
-import com.lqm.study.common.BaseActivity;
+import com.lqm.study.base.AppConst;
+import com.lqm.study.base.BaseActivity;
 import com.lqm.study.common.enums.OrderStatusEnum;
 import com.lqm.study.helper.JsonCallback;
 import com.lqm.study.helper.PayResult;
@@ -30,7 +30,6 @@ import com.lzy.okgo.model.Response;
 import java.util.Map;
 
 import butterknife.Bind;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**

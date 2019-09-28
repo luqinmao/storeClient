@@ -11,23 +11,17 @@ import android.widget.RelativeLayout;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.lqm.study.R;
 import com.lqm.study.adapter.AddressAdapter;
-import com.lqm.study.adapter.CarAdapter;
-import com.lqm.study.common.AppConst;
-import com.lqm.study.common.BaseActivity;
+import com.lqm.study.base.AppConst;
+import com.lqm.study.base.BaseActivity;
 import com.lqm.study.helper.JsonCallback;
 import com.lqm.study.helper.ResponseData;
-import com.lqm.study.model.TestModel;
 import com.lqm.study.model.Vo.ShippingVo;
-import com.lqm.study.model.pojo.ProductBean;
 import com.lqm.study.model.pojo.ShippingBean;
 import com.lqm.study.util.T;
 import com.lqm.study.widget.CustomPopWindow;
 import com.lqm.study.widget.IconTextView;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.model.Response;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.Bind;
 import butterknife.OnClick;

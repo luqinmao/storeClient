@@ -7,7 +7,7 @@ import android.support.v4.view.ViewPager;
 
 import com.lqm.study.R;
 import com.lqm.study.adapter.TabFragAdapter;
-import com.lqm.study.common.BaseActivity;
+import com.lqm.study.base.BaseActivity;
 import com.lqm.study.fragment.OrderListStatusFragment;
 import com.lqm.study.widget.IconTextView;
 

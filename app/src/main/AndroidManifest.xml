@@ -18,7 +18,7 @@
 
 
     <application
-        android:name="com.lqm.study.common.App"
+        android:name="com.lqm.study.base.App"
         android:icon="@mipmap/logo"
         tools:replace="android:icon"
         android:label="@string/app_name"

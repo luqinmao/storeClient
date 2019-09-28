@@ -9,9 +9,9 @@ import android.widget.TextView;
 
 import com.lqm.study.R;
 import com.lqm.study.adapter.FragPagerAdapter;
-import com.lqm.study.broadcast.CommonEvent;
-import com.lqm.study.common.App;
-import com.lqm.study.common.BaseActivity;
+import com.lqm.study.common.broadcast.CommonEvent;
+import com.lqm.study.base.App;
+import com.lqm.study.base.BaseActivity;
 import com.lqm.study.fragment.CartFragment;
 import com.lqm.study.fragment.HomeFragment;
 import com.lqm.study.fragment.SoftFragment;

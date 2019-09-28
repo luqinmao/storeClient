@@ -9,10 +9,10 @@ import android.widget.TextView;
 
 import com.lqm.study.R;
 import com.lqm.study.activity.MainActivity;
-import com.lqm.study.broadcast.CommonEvent;
-import com.lqm.study.common.App;
-import com.lqm.study.common.AppConst;
-import com.lqm.study.common.BaseFragment;
+import com.lqm.study.common.broadcast.CommonEvent;
+import com.lqm.study.base.App;
+import com.lqm.study.base.AppConst;
+import com.lqm.study.base.BaseFragment;
 import com.lqm.study.helper.JsonCallback;
 import com.lqm.study.helper.ResponseCode;
 import com.lqm.study.helper.ResponseData;

@@ -10,7 +10,6 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.lqm.study.R;
 import com.lqm.study.activity.ProductDetailActivity;
-import com.lqm.study.common.AppConst;
 import com.lqm.study.model.pojo.ProductBean;
 import com.lqm.study.util.ImageLoaderManager;
 

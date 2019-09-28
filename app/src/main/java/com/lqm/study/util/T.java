@@ -3,7 +3,7 @@ package com.lqm.study.util;
 import android.content.Context;
 import android.widget.Toast;
 
-import com.lqm.study.common.App;
+import com.lqm.study.base.App;
 
 /**
  * Toast统一管理类

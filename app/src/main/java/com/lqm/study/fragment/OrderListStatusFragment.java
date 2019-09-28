@@ -2,7 +2,6 @@ package com.lqm.study.fragment;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.os.Debug;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -10,16 +9,14 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.View;
-import android.widget.TextView;
 
 import com.alipay.sdk.app.EnvUtils;
 import com.alipay.sdk.app.PayTask;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.lqm.study.R;
-import com.lqm.study.activity.OrderConfirmActivity;
 import com.lqm.study.adapter.OrderListAdapter;
-import com.lqm.study.common.AppConst;
-import com.lqm.study.common.BaseFragment;
+import com.lqm.study.base.AppConst;
+import com.lqm.study.base.BaseFragment;
 import com.lqm.study.helper.JsonCallback;
 import com.lqm.study.helper.PayResult;
 import com.lqm.study.helper.ResponseData;
@@ -29,14 +26,12 @@ import com.lqm.study.util.T;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.model.Response;
 
-import java.io.File;
 import java.util.Map;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
 import static android.view.View.inflate;
-import static com.lqm.study.common.AppConst.Order.confirmReceivedGoods;
 
 /**
  * user：lqm

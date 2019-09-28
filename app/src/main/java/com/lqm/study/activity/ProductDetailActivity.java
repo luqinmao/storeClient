@@ -5,19 +5,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.text.Html;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.alipay.sdk.app.EnvUtils;
 import com.alipay.sdk.app.PayTask;
 import com.lqm.study.R;
-import com.lqm.study.common.AppConst;
-import com.lqm.study.common.BaseActivity;
-import com.lqm.study.helper.AliPayHelp;
+import com.lqm.study.base.AppConst;
+import com.lqm.study.base.BaseActivity;
 import com.lqm.study.helper.JsonCallback;
 import com.lqm.study.helper.PayResult;
 import com.lqm.study.helper.ResponseData;
@@ -30,12 +27,6 @@ import com.lqm.study.widget.NumberButton;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.model.Response;
 
-import java.io.Serializable;
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import butterknife.Bind;

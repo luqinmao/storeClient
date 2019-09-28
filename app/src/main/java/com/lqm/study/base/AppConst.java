@@ -1,4 +1,4 @@
-package com.lqm.study.common;
+package com.lqm.study.base;
 
 /**
  * user：lqm

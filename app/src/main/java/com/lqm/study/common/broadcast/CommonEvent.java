@@ -1,4 +1,4 @@
-package com.lqm.study.broadcast;
+package com.lqm.study.common.broadcast;
 
 /**
  * user：lqm

@@ -11,7 +11,7 @@ import com.lqm.study.adapter.FragPagerAdapter;
 import com.lqm.study.fragment.LoginFragment;
 import com.lqm.study.fragment.RegisterFragment;
 import com.lqm.study.widget.IconTextView;
-import com.lqm.study.common.BaseActivity;
+import com.lqm.study.base.BaseActivity;
 import com.lqm.study.util.UIUtil;
 
 import java.util.ArrayList;

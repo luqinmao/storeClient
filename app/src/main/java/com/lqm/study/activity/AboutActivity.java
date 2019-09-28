@@ -1,16 +1,9 @@
 package com.lqm.study.activity;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
 
 import com.lqm.study.R;
-import com.lqm.study.common.BaseActivity;
-import com.lqm.study.widget.IconTextView;
-
-import butterknife.Bind;
-import butterknife.OnClick;
+import com.lqm.study.base.BaseActivity;
 
 /**
  * 关于界面

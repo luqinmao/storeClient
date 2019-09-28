@@ -3,7 +3,7 @@ package com.lqm.study.activity;
 import android.os.Bundle;
 
 import com.lqm.study.R;
-import com.lqm.study.common.BaseActivity;
+import com.lqm.study.base.BaseActivity;
 
 /**
  * 发现更多界面

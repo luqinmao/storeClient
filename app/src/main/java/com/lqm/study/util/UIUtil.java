@@ -8,7 +8,7 @@ import android.support.annotation.ColorRes;
 import android.support.annotation.NonNull;
 import android.util.TypedValue;
 
-import com.lqm.study.common.App;
+import com.lqm.study.base.App;
 
 
 /**

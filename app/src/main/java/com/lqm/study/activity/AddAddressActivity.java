@@ -8,8 +8,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.lqm.study.R;
-import com.lqm.study.common.AppConst;
-import com.lqm.study.common.BaseActivity;
+import com.lqm.study.base.AppConst;
+import com.lqm.study.base.BaseActivity;
 import com.lqm.study.helper.JsonCallback;
 import com.lqm.study.helper.ResponseData;
 import com.lqm.study.model.pojo.ShippingBean;
@@ -18,10 +18,7 @@ import com.lqm.study.widget.IconTextView;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.model.Response;
 
-import java.io.Serializable;
-
 import butterknife.Bind;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
