@@ -12,15 +12,15 @@ public class ShoppingConfirmVo {
          * imageHost : ftp://116.62.147.110/img/
          */
 
-        private int productTotalPrice;
+        private double productTotalPrice;
         private String imageHost;
         private List<OrderItemVoListBean> orderItemVoList;
 
-        public int getProductTotalPrice() {
+        public double getProductTotalPrice() {
             return productTotalPrice;
         }
 
-        public void setProductTotalPrice(int productTotalPrice) {
+        public void setProductTotalPrice(double productTotalPrice) {
             this.productTotalPrice = productTotalPrice;
         }
 

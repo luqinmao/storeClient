@@ -17,9 +17,9 @@ public class OrderItemVoListBean {
         private int productId;
         private String productName;
         private String productImage;
-        private int currentUnitPrice;
+        private double currentUnitPrice;
         private int quantity;
-        private int totalPrice;
+        private double totalPrice;
         private String createTime;
 
         public Long getOrderNo() {
@@ -54,11 +54,11 @@ public class OrderItemVoListBean {
             this.productImage = productImage;
         }
 
-        public int getCurrentUnitPrice() {
+        public double getCurrentUnitPrice() {
             return currentUnitPrice;
         }
 
-        public void setCurrentUnitPrice(int currentUnitPrice) {
+        public void setCurrentUnitPrice(double currentUnitPrice) {
             this.currentUnitPrice = currentUnitPrice;
         }
 
@@ -70,11 +70,11 @@ public class OrderItemVoListBean {
             this.quantity = quantity;
         }
 
-        public int getTotalPrice() {
+        public double getTotalPrice() {
             return totalPrice;
         }
 
-        public void setTotalPrice(int totalPrice) {
+        public void setTotalPrice(double totalPrice) {
             this.totalPrice = totalPrice;
         }
 

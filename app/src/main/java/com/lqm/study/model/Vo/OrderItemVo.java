@@ -28,10 +28,10 @@ public class OrderItemVo {
          */
 
         private long orderNo;
-        private int payment;
+        private double payment;
         private int paymentType;
         private String paymentTypeDesc;
-        private int postage;
+        private double postage;
         private int status;
         private String statusDesc;
         private String paymentTime;
@@ -55,11 +55,11 @@ public class OrderItemVo {
             this.orderNo = orderNo;
         }
 
-        public int getPayment() {
+        public double getPayment() {
             return payment;
         }
 
-        public void setPayment(int payment) {
+        public void setPayment(double payment) {
             this.payment = payment;
         }
 
@@ -79,11 +79,11 @@ public class OrderItemVo {
             this.paymentTypeDesc = paymentTypeDesc;
         }
 
-        public int getPostage() {
+        public double getPostage() {
             return postage;
         }
 
-        public void setPostage(int postage) {
+        public void setPostage(double postage) {
             this.postage = postage;
         }
 

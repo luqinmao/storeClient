@@ -1,6 +1,7 @@
 package com.lqm.study.fragment;
 
 import android.content.Intent;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
@@ -35,7 +36,7 @@ import static android.view.View.inflate;
  * desc：购物车模块
  */
 
-public class CartFragment extends BaseFragment {
+public class CartFragment extends BaseFragment implements SwipeRefreshLayout.OnRefreshListener{
 
     @Bind(R.id.tv_title)
     TextView tvTitle;
@@ -47,6 +48,8 @@ public class CartFragment extends BaseFragment {
     TextView tvTotalPrice;
     @Bind(R.id.tv_submit)
     TextView tvSubmit;
+    @Bind({R.id.refresh_layout})
+    SwipeRefreshLayout refreshLayout;
 
     private CarAdapter carAdapter;
     private boolean isSelectAll;
@@ -69,8 +72,9 @@ public class CartFragment extends BaseFragment {
         carAdapter = new CarAdapter(null);
         carAdapter.bindToRecyclerView(rvContent);
         carAdapter.setEmptyView(R.layout.layout_empty_nor);
+        refreshLayout.setOnRefreshListener(this);
 
-        getShoppingCarData();
+        onRefresh();
 
     }
 
@@ -160,8 +164,6 @@ public class CartFragment extends BaseFragment {
                     }
                 });
 
-
-
                 return false;
             }
         });
@@ -242,6 +244,11 @@ public class CartFragment extends BaseFragment {
                 public void onError(Response<ResponseData<ShoppingCardVo>> response) {
                     T.showShort(response.message());
                 }
+
+                @Override
+                public void onFinish() {
+                    setRefreshing(false);
+                }
             });
 
     }
@@ -308,11 +315,11 @@ public class CartFragment extends BaseFragment {
     @Override
     public void onResume() {
         super.onResume();
-        getShoppingCarData();
+        onRefresh();
     }
 
 
-    private void selectAllUi(int totalPrice){
+    private void selectAllUi(double totalPrice){
         if (isSelectAll){
             itSelectAll.setTextColor(UIUtil.getColor(R.color.main));
             itSelectAll.setText(UIUtil.getString(R.string.ic_select));
@@ -323,4 +330,17 @@ public class CartFragment extends BaseFragment {
         tvTotalPrice.setText("￥"+totalPrice);
     }
 
+    @Override
+    public void onRefresh() {
+        getShoppingCarData();
+    }
+
+    public void setRefreshing(final boolean refreshing) {
+        refreshLayout.post(new Runnable() {
+            @Override
+            public void run() {
+                refreshLayout.setRefreshing(refreshing);
+            }
+        });
+    }
 }

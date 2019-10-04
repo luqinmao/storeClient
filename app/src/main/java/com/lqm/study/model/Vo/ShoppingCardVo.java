@@ -14,16 +14,16 @@ public class ShoppingCardVo {
          * imageHost : ftp://116.62.147.110/img/
          */
 
-        private int cartTotalPrice;
+        private double cartTotalPrice;
         private boolean allChecked;
         private String imageHost;
         private List<ShoppingCardBean> cartProductVoList;
 
-        public int getCartTotalPrice() {
+        public double getCartTotalPrice() {
             return cartTotalPrice;
         }
 
-        public void setCartTotalPrice(int cartTotalPrice) {
+        public void setCartTotalPrice(double cartTotalPrice) {
             this.cartTotalPrice = cartTotalPrice;
         }
 

@@ -111,11 +111,10 @@ public class SearchActivity extends BaseActivity
     public void setHotKeyIU() {
         layoutHotKey.removeAllViews();
         final List<String> hotKeys = new ArrayList<>();
-        hotKeys.add("洗衣机");
-        hotKeys.add("冰箱");
-        hotKeys.add("手机");
-        hotKeys.add("手");
-        hotKeys.add("手环");
+        hotKeys.add("招牌");
+        hotKeys.add("奶茶");
+        hotKeys.add("鸡翅");
+        hotKeys.add("堡");
         for (int i = 0; i < hotKeys.size(); i++) {
             View view = LinearLayout.inflate(SearchActivity.this, R.layout.item_hot_key, null);
             TextView textView = (TextView) view.findViewById(R.id.textview);
