@@ -28,9 +28,8 @@
 
 
     <string name="about_me_tip">
-        项目后端项目地址： https://github.com/luqinmao/store. \n\n
-        本项目源码地址为 https://github.com/luqinmao/LittleStore. \n\n 哈哈，如果觉得可以的话给个start吧！\n\n
-        项目主要技术框架技术： \n\n xxxxxxxxxxxxxx
+        项目后端项目地址： https://github.com/luqinmao/storeServer \n\n
+        本项目源码地址为 https://github.com/luqinmao/storeClient \n\n 哈哈，如果觉得可以的话给个start吧！\n\n
     </string>
 
 

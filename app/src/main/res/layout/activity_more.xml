@@ -38,6 +38,15 @@
 
 
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="待开发与完善更多的功能~"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        />
+
 </LinearLayout>
 
 
